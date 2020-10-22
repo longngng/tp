@@ -92,6 +92,7 @@ public class ListCommandTimetableMode extends CliCommand {
                 System.out.println(task);
             }
         }
+        assert i == (appState.getTaskList().getNumberOfTasks() + 1) : "i should be equal to number of tasks plus 1";
         if (i == 1) {
             System.out.println("The list of undone tasks is empty");
         }
